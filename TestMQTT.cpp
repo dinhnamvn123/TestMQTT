@@ -106,7 +106,7 @@ void onConnect(void* context, MQTTAsync_successData* response)
 	MQTTAsync client = (MQTTAsync)context;
 	MQTTAsync_responseOptions opts = MQTTAsync_responseOptions_initializer;
 	MQTTAsync_message pubmsg = MQTTAsync_message_initializer;
-    MQTTAsync_token token = 99;
+    MQTTAsync_token token;
 	int rc;
 
     std::string payload = PAYLOAD;
